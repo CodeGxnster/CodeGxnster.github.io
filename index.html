@@ -32,7 +32,15 @@
         </div> -->
         <div class="header-text">
           
-            <h1>Hi, I'm Frankelly<br><span id="cordero-span">Cordero.</span></h1>
+            <h1 id="gretting">Hi, I'm Frankelly<br><span id="cordero-span">Cordero.</span></h1>
+            <a href="#about"><img src="sword-porfolio-2.png" id="sword" class="objects" width="500px" height="500px"/></a>
+            <a href="#services"><img src="star-portfolio.png" id="star" class="objects" width="250px" height="250px"/></a>
+            <a href="#portfolio"><img src="arrow-portfolio.png" id="arrow" class="objects" width="200px" height="200px"/></a>
+            <img src="sword-shadow.png" id="sword-shadow" class="shadow" width="515px" height="515px"/>
+            <img src="star-shadow.png" id="star-shadow" class="shadow" width="270px" height="270px">
+            <img src="arrow-shadow.png" id="arrow-shadow" width="210px" height="210px">
+            <audio src="sword-audio"></audio>
+
         </div>
     </div>
 </div>
@@ -44,7 +52,7 @@
                 <img src="git-hub-image.jpg">
             </div>
             <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1> 
+                <h1 class="sub-title">About Me <img src="sword-2D-mini.png" width="70px" height="70px" id="sword-2D"></h1> 
                 <br>
                 <p class="about-me-info">  I'm Frankelly Cordero, a passionate software engineer student
                      with a deep love for coding, cybersecurity, and creative digital 
@@ -63,9 +71,9 @@
                     I love exploring ethical hacking techniques, system security, 
                     and learning how to fortify digital infrastructures. </p>
                 <div class="tab-tittles">
-                    <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
-                    <p class="tab-links" onclick="openTab('experience')">Experience</p>
-                    <p class="tab-links" onclick="openTab('education')">Education</p>
+                    <p class="tab-links active-link" onclick="openTab(event, 'skills')">Skills</p>
+                    <p class="tab-links" onclick="openTab(event, 'experience')">Experience</p>
+                    <p class="tab-links" onclick="openTab(event, 'education')">Education</p>
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
@@ -98,7 +106,7 @@
 <!-- -----------SERVICES --------------> 
 <div id="services">
     <div class="container">
-        <h1 class="sub-title"> My services</h1>
+        <h1 class="sub-title"> My services <img id='star-2D' src="star-2D-mini.png" width="50px" height="50px"></h1>
         <div class="services-list">
             <div>
                 <i class="fa-solid fa-code"></i>
@@ -138,7 +146,7 @@
 <!----------------------------- Portfolio -------------------------------------->
 <div id="portfolio">
     <div class="container">
-        <h1 class="sub-title">My work</h1>
+        <h1 class="sub-title">My work <img id='arrow-2D' src="arrow-2D-mini.png" width="50px" height="50px"></h1>
         <div class="work-list">
             <div class="work">
                 <img src="images/work-1.png">

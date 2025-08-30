@@ -13,39 +13,70 @@ html{
 
 p {
    font-family: sans-serif;
+   text-align: justify;
 }
 
 body {
     background-color: #080808;
     color: #fff;
 }
-/* Canvas   
-
-.canvas-container{
-   position: absolute;
-   left: 53%;
-   width: 550px;
-   height: 530px;
-   background-color: #080808;
-   bottom: 0px;
-   
-   
-}
-
-#canvas1{
-   width: 100%;
-   height: 100%;
-}
-
-/* Canvas   */
+/* homepage */
 
 
 #header {
   width: 100%;
   height: 100vh;
-  background-image: url('Portfolio-NP.png');
   background-size: cover;
+  background-image: url('porfoliobackground.png');
 }
+#sword{
+   position: relative;
+   top: -280px;
+   left: 650px;
+   z-index: 1;
+   transition: 1s;
+}
+#sword-shadow{
+   position: relative;
+   top: -800px;
+   left: 630px;
+   transition: 1.5s;
+   opacity: 0; 
+}
+#star{
+   position: relative;
+   top: -275px;
+   left: -500px;
+   z-index: 1;
+   transition: 1.5s;
+}
+
+/* #star:hover{
+   transform: rotate(360deg);
+} */
+#star-shadow{
+   position: relative;
+   top: -780px;
+   left: -525px;
+   transition: 1.5s;
+   opacity: 0;
+}
+#arrow{
+   position: relative;
+   top: -690px;
+   left: -630px; 
+   z-index: 1;  
+   transition: 1.5s;
+}
+#arrow-shadow{
+   position: relative;
+   top: -1196px;
+   left: -674px;
+   transition: 1.5s;
+   opacity: 0;
+}
+
+
 
 .container {
  padding: 10px 10%;
@@ -63,7 +94,7 @@ nav{
 }
 
 .logo{
-    width: 120px;
+    width: 100px;
     margin-top: 70px;
    
     
@@ -91,6 +122,8 @@ nav ul li a {
    position: relative;
    border-radius: 10px;
    font-family: "Press Start 2P", system-ui;
+backdrop-filter: blur(5px);
+
    
 }
 
@@ -154,8 +187,15 @@ nav ul li a:hover{
     font-weight: 600;
     color: #fff;
     font-family: "Press Start 2P", system-ui;
+ } 
+ #sword-2D,
+ #star-2D,
+ #arrow-2D{
+   background-color: red;
+   padding: 5px;
+   border-radius: 100%;
  }
-
+ 
  .tab-tittles{
     display: flex;
     margin: 20px 0 40px;
@@ -206,6 +246,7 @@ nav ul li a:hover{
 
 .about-me-info{
    font-size: 15px;
+   text-align: justify;
 }
  /* SERVICES */
 
@@ -429,20 +470,21 @@ nav .fas{
       background-image: url('Frank-PH1.png');
    }
    .header-text{
-      margin-top: 85%;
-      font-size: 16px;
+      margin-top: 70%;
+      font-size: 10px;
    }
 
    .header-text h1{
-      font-size: 20px;
+      font-size: 10px;
    }
+
    
    #cordero-span{
       font-size: 45px;
       margin-left: -15px;
    }
    .logo{
-      width: 70px;
+      width: 60px;
       
    }
    nav .fas{
