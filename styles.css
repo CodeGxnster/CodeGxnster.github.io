@@ -43,10 +43,27 @@ place-content: center;
    padding: 40px;
 }
 
-img[alt="home"], img[alt="aboutMe"], img[alt="projects"], img[alt="services"], img[alt="contact"]{
+img[alt="home"], img[alt="about"], img[alt="projects"], img[alt="services"], img[alt="contact"]{
   background-color: black;
   border-radius: 45px;
   padding: 25px;
   cursor: pointer;
 }
+
+
+/* home styles */
+.home {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: black;
+   border-radius: 80px;
+}
+.home-title {
+   font-size: 50px;
+   font-weight: bold;
+   background-color: red;
+}
+
 
